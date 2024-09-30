@@ -3,31 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi propia pagina</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Sumar Dos Números</title>
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a la pagina de Enzo Catrin</h1>
-    </header>
+    <h1>Sumar Dos Números</h1>
+    <form id="formularioSuma">
+        <label for="numero1">Número 1:</label>
+        <input type="number" id="numero1" placeholder="Ingresa el primer número" required><br><br>
 
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+        <label for="numero2">Número 2:</label>
+        <input type="number" id="numero2" placeholder="Ingresa el segundo número" required><br><br>
 
-    <main>
-        <section id="inicio">
-            <h2>Acerca de mi</h2>
-            <p>Estudiante de la tecnicatura en desarrollo web .</p>
-        </section>
+        <input type="button" value="Calcular Suma" onclick="calcularSuma()">
+    </form>
 
-    
-    <footer>
-        <p>© 2024 Universidad Nacional del Comahue - Sede Viedma Todos los derechos reservados.</p>
-    </footer>
+    <h2>Resultado:</h2>
+    <p id="resultado"></p>
+
+    <script>
+        function calcularSuma() {
+            // Obtener valores de los campos de entrada
+            let numero1 = parseFloat(document.getElementById('numero1').value);
+            let numero2 = parseFloat(document.getElementById('numero2').value);
+
+            // Calcular la suma
+            let suma = numero1 + numero2;
+
+            // Mostrar el resultado
+            document.getElementById('resultado').innerText = 'La suma es: ' + suma;
+        }
+    </script>
 </body>
 </html>
+
