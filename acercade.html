@@ -31,27 +31,27 @@
         <section id="acerca-de">
             <h2>Acerca de Mí</h2>
             <article class="acerca-de">
-                <!-- Primera línea fija (sticky) -->
                 <p class="sticky-header">Soy alumno de la carrera Desarrollo Web que se dicta en el CURZA.</p>
                 <p>Busco aprender y aplicar nuevos conocimientos para mejorar mis habilidades en desarrollo web.</p>
                 <img src="imagen.jpeg" alt="Foto de Enzo" width="200">
                 <p>Mi objetivo es desarrollarme profesionalmente en el ámbito de la programación.</p>
+                
+                <!-- Currículum abreviado y botón Leer más -->
+                <p id="cv-abreviado">
+                    Experiencia en desarrollo de sitios web y aplicaciones educativas. Conocimiento en HTML, CSS, y JavaScript.
+                </p>
+                
+                <!-- Currículum completo (inicialmente oculto) -->
+                <p id="cv-completo" style="display: none;">
+                    Experiencia en desarrollo de sitios web y aplicaciones educativas. Conocimiento en HTML, CSS, JavaScript, y herramientas de diseño web. 
+                    Experiencia en trabajo colaborativo y en el uso de software libre. Me especializo en la creación de interfaces intuitivas y accesibles para el usuario.
+                </p>
+                
+                <!-- Botón para leer más -->
+                <button onclick="toggleCV()">Leer más</button>
+                
                 <h3>¿Cuál es la relación entre el software libre y la educación?</h3>
-
-                <p>La libertad del software asume un rol de fundamental importancia en el
-                ámbito educativo. Las instituciones  educativas de todos los niveles deben
-                utilizar y enseñar exclusivamente software libre porque es el único que les
-                permite cumplir con sus misiones fundamentales: difundir el conocimiento y
-                enseñar a los estudiantes a ser buenos miembros de su comunidad. El código
-                fuente y los métodos del software libre son parte del conocimiento
-                humano. Al contrario, el software privativo es conocimiento secreto y
-                restringido y, por lo tanto, se opone a la misión de las instituciones
-                educativas. El software libre favorece la enseñanza, mientras el software
-                privativo la prohíbe.</p>
-                <p>Para más información, consulte la <a href=" /philosophy/free-sw.html"
-                    >definición de software libre</a> y nuestro artículo <a
-                    href="/philosophy/shouldbefree.html">por qué el software debe ser libre</a>.</p>
-                    
+                <p>La libertad del software asume un rol de fundamental importancia en el ámbito educativo...</p>
             </article>
         </section>
     </main>
@@ -69,4 +69,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
